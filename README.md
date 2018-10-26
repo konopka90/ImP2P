@@ -12,7 +12,7 @@ Milestones for I'm P2P:
 # Windows build notes
 
 ## Prepare NuGet packages
-Open solution and download packages via NuGet:
+Open solution with Visual Studio 2017 and download packages via NuGet:
 - Google.Protobuf
 - Grpc
 - Grpc.Core
