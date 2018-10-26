@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+option csharp_namespace = "ImP2PMessaging";
+
+
+service Messaging {
+	rpc SendMessage (ImP2PMessage) returns (ImP2PMessage) {}
+}
+
+message ImP2PMessage {
+	string name = 1;
+	string msg = 2;
+}
+
