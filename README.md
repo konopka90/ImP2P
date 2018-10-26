@@ -1,4 +1,4 @@
-# ImP2P
+# I'm P2P
 
 I'm P2P is experimental implementation of IM-P2P communicator (Instant Messaging Peer to Peer). 
 Main objective is to learn and test in field the newest technologies like:
