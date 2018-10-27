@@ -1,4 +1,4 @@
-# I'm P2P
+# I'm P2P in ![grpc](https://alexandreesl.files.wordpress.com/2017/04/grpc.png?w=70) world!
 
 I'm P2P is experimental implementation of IM-P2P communicator (Instant Messaging Peer to Peer). 
 Main objective is to learn and test in field the newest technologies like:
