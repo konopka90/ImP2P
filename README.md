@@ -22,13 +22,6 @@ Open solution with Visual Studio 2017 and download packages via NuGet:
 - Grpc.Core
 - Grpc.Tools
 
-## Generate gRPC definitions
-``cd SOLUTION_DIR/ImP2P/Sources``
-
-``protoc.exe -I. --csharp_out ./grpc/ --grpc_out ./grpc/ ./protos/ImP2PMessaging.proto --plugin=protoc-gen-grpc=C:\Users\[PUT YOUR USER HERE]\.nuget\packages\grpc.tools\1.16.0\tools\windows_x64\grpc_csharp_plugin.exe``
-
-(sad story here because even if you add grpc_csharp_plugin.exe to your PATH protoc.exe cannot see it - don't know why but full path to exec solved problem)
-
 # How to use
 
 ## Generate SSL certs
@@ -46,3 +39,12 @@ Open solution with Visual Studio 2017 and download packages via NuGet:
 If 127.0.0.1 or localhost doesn't work use your computer name, example:
 
 ``./ImP2P.exe "DESKTOP-URHHCEK"``
+
+# Developer hints
+
+## Generate gRPC definitions
+``cd SOLUTION_DIR/ImP2P/Sources``
+
+``protoc.exe -I. --csharp_out ./grpc/ --grpc_out ./grpc/ ./protos/ImP2PMessaging.proto --plugin=protoc-gen-grpc=C:\Users\[PUT YOUR USER HERE]\.nuget\packages\grpc.tools\1.16.0\tools\windows_x64\grpc_csharp_plugin.exe``
+
+(sad story here because even if you add grpc_csharp_plugin.exe to your PATH protoc.exe cannot see it - don't know why but full path to exec solved problem)
